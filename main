@@ -79,3 +79,13 @@ def edit_dates2(wallets: list) -> None:
         filtered_wallets = list(filter(filter_wallets2, all_wallet_info))
         edit_dates2(filtered_wallets)
     return filtered_wallets
+
+def filter_wallets2(wallet: dict) -> bool:
+    if (wallet['ua'].lower() in WALLETS):
+        return True
+    return False
+
+def filter_wallets6(wallet: dict) -> bool:
+    if (wallet['ua'].lower() in WALLETS):
+        return True
+    return False
