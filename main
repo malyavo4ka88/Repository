@@ -54,6 +54,10 @@ def load_wallets() -> None:
     with open(file_wallets, 'r') as file:
         WALLETS = [row.strip().lower() for row in file]
 
+def filter_wallets21(wallet: dict) -> bool:
+    if (wallet['ua'].lower() in WALLETS):
+        return True
+    return False
 
 def edit_dates1(wallets: list) -> None:
     for wallet in wallets:
