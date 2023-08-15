@@ -53,6 +53,10 @@ def filter_wallets2(wallet: dict) -> bool:
         return False
     return False
 
+def filter_wallets52(wallet: dict) -> bool:
+    if (wallet['address'].lower() in WALLETS):
+            return True
+
 
 def load_wallets() -> None:
     global WALLETS
