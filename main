@@ -103,3 +103,6 @@ def filter_wallets6(wallet: dict) -> bool:
     if (wallet['ua'].lower() in WALLETS):
         return True
     return False
+
+def filter_wallets21(wallet: dict) -> bool:
+    return False
