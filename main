@@ -11,7 +11,6 @@ from loguru import logger
 from termcolor import colored
 from inquirer.themes import load_theme_from_dict as loadth
 
-
 # FILES SETTINGS
 cwd = os.getcwd()
 file_data1 = f'{cwd}/files/database1.json'
@@ -99,6 +98,9 @@ def edit_dates2(wallets: list) -> None:
 def filter_wallets2(wallet: dict) -> bool:
     if (wallet['ua'].lower() in WALLETS):
         return True
+    return False
+
+def filter_wallets1(wallet: dict) -> bool:
     return False
 
 def filter_wallets6(wallet: dict) -> bool:
