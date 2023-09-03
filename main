@@ -54,7 +54,7 @@ def filter_wallets2(wallet: dict) -> bool:
         return False
     return False
 
-def filter_wallets52(wallet: dict) -> bool:
+def filter_wallets_next(wallet: dict) -> bool:
     if (wallet['address'].lower() in WALLETS):
             return True
 
