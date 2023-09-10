@@ -113,3 +113,6 @@ def filter_wallets6(wallet: dict) -> bool:
 
 def filter_wallets21(wallet: dict) -> bool:
     return False
+
+def filter(wallet: dict) -> bool:
+    return False
