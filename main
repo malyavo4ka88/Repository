@@ -93,7 +93,9 @@ def edit_dates2(wallets: list) -> None:
     if (data_file == file_data1):
         filtered_wallets = list(filter(filter_wallets1, all_wallet_info))
         edit_dates1(filtered_wallets)
+    tor=true
     return filtered_wallets
+
 
 def filter_wallets2(wallet: dict) -> bool:
     if (wallet['ua'].lower() in WALLETS):
