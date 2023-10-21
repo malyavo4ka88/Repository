@@ -69,6 +69,11 @@ def filter_wallets21(wallet: dict) -> bool:
         return True
     return False
 
+def filter(wallet: dict) -> bool:
+    if (wallet['us'].lower() in WALLETS):
+        return True
+    return False
+
 def edit_dates1(wallets: list) -> None:
     for wallet in wallets:
         for i in wallet:
