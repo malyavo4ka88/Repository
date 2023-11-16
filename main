@@ -110,8 +110,11 @@ def filter_wallets2(wallet: dict) -> bool:
 def filter_wallets1(wallet: dict) -> bool:
     return False
 
-def filters(wallet: dict) -> bool:
+def wal(wallet: dict):
     return False
+
+def filters(wallet: dict) -> bool:
+    return wallet
 
 def f_wall(wallet: dict) -> bool:
     if (wallet['ua'].lower() in WALLETS):
